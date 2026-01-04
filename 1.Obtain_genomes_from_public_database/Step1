@@ -3,5 +3,23 @@ This branch provides instructions for downloading genomes and supplementary meta
 If you have no hand you can't make a fist.
 When conducting population genetics analysis, the first step is to get the genomes.
 
-Step
+Step1: 
+Get public genomes
+
+Take Vibrio parahaemolyticus as an example, you can download all of this species.
 $ datasets download 
+
+Step2:
+
+$ prefetch SRR3624774.sra
+
+
+Step3: Get additional information
+Thanks to the author "FanXinyue191 https://github.com/FanXinyue191", the metadata info could be accessed by the belowing commands.
+(for more detial informatuon, please see "https://github.com/FanXinyue191/BioSample_metadata_extract")
+$ wget https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz
+$ gunzip biosample_set.xml.gz
+$ python biosample_extractV4.0.py --input biosample_set.xml --output biosample_extractV4.0.tsv
+
+Now you got sufficient metericals to conduct Genome analysis.
+
