@@ -2,3 +2,6 @@ This branch provides instructions for downloading genomes and supplementary meta
 
 If you have no hand you can't make a fist.
 When conducting population genetics analysis, the first step is to get the genomes.
+
+Step
+$ datasets download 
